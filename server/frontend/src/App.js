@@ -6,6 +6,10 @@ import PostReview from "./components/Dealers/PostReview";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
+  sessionStorage.setItem("username", "steph");
+  sessionStorage.setItem("firstname", "Steph");
+  sessionStorage.setItem("lastname", "Linley");
+
   return (
     <Routes>
       <Route path="/login" element={<LoginPanel />} />
