@@ -1,0 +1,3 @@
+curl -X GET "${URL}/analyze/Fantastic%20services"
+
+<YOUR EXACT SENTIMENT RESPONSE HERE>
