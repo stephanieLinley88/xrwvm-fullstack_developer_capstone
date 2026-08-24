@@ -48,12 +48,11 @@ jobs:
           node-version: '14'
 
       - name: Install JSHint
-        run: |
-          npm install jshint --global
+        run: npm install jshint --global
 
       - name: Create JSHint configuration
         run: |
-          echo '{"esversion": 6}' > .jshintrc
+          echo '{"esversion":8,"asi":true,"sub":true,"node":true}' > .jshintrc
 
       - name: Run Linter
         run: |
